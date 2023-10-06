@@ -27,7 +27,7 @@ export default function Header() {
           // className={`${toggle_label} ${darkTheme ? toggle_label_checked : ""}`}
           className={`${toggle_label} ${toggle_label_checked}`}
         ></label>
-        <div className={`${header_link}`}>
+        {/* <div className={`${header_link}`}>
           <Link href={"/register"} className={link}>
             Sign in
           </Link>
@@ -36,7 +36,7 @@ export default function Header() {
           <Link href={"/login"} className={link}>
             Login
           </Link>
-        </div>
+        </div> */}
       </div>
     </div>
   );

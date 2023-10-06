@@ -4,6 +4,7 @@ import Header from "./_components/Header/Header";
 import Card from "./_components/composables/Card/Card";
 import ContentCard from "./_components/composables/Card/ContentCard";
 import Footer from "./_components/composables/Footer/Footer";
+import { myStyle } from "./_styles/vars.css";
 
 export const metadata: Metadata = {
   title: "블로그 만들기 프로젝트",
@@ -17,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className={myStyle}>
         <Card>
           <Header />
           <ContentCard>{children}</ContentCard>

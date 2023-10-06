@@ -13,3 +13,8 @@ export const content_card = style({
   padding: "4.5rem 0",
   paddingBottom: "4.5rem 0",
 });
+
+export const all_posts_card = style({
+  padding: "5rem 0",
+  display: "flex",
+});

@@ -1,5 +1,6 @@
 import { style, keyframes } from "@vanilla-extract/css";
 import { softAppear } from "./animation.css";
+import { header_background_color } from "./vars.css";
 
 export const header_container = style({
   top: "0",
@@ -16,6 +17,7 @@ export const header_container = style({
   alignItems: "center",
   animation: `${softAppear} 0.3s ease-in forwards`,
   transition: "all 0.3s ease",
+  background: header_background_color,
 });
 
 export const header_category_container = style({
