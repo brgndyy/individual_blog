@@ -13,6 +13,8 @@ import {
   post_comments_count,
   post_likes_count,
 } from "@/app/_styles/post_item.css";
+import Link from "next/link";
+import { formatDate } from "@/app/_utils/formatDate";
 
 export default function PostItem({
   id,
@@ -22,9 +24,12 @@ export default function PostItem({
   articleImage,
   tagList,
   createdAt,
+  slug,
 }: PostType) {
+  const formattedDate = formatDate(createdAt);
+
   return (
-    <li className={post_container}>
+    <Link href={`/posts/${slug}`} className={post_container}>
       <div className={post_image_container}>
         <Image
           className={post_image}
@@ -39,8 +44,8 @@ export default function PostItem({
         <div className={post_description}> {description}</div>
       </div>
       <div className={post_info_container}>
-        <div className={post_date}> {createdAt}</div>
+        <div className={post_date}> {formattedDate}</div>
       </div>
-    </li>
+    </Link>
   );
 }

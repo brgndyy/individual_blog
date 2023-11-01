@@ -31,3 +31,7 @@ export const getAllTags = (): TagType[] => {
 
   return [...allTagsMap.entries()].map(([tag, count]) => ({ tag, count }));
 };
+
+export const getArticle = (slug: string) => {
+  return mock_articles.articles.find((article) => article.slug === slug);
+};

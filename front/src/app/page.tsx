@@ -6,6 +6,7 @@ import AllPostCard from "./_components/composables/Card/AllPostCard";
 
 export default function Home() {
   const { allPosts, author } = getAllPosts();
+
   const allTags = getAllTags();
 
   return (

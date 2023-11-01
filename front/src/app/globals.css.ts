@@ -1,5 +1,5 @@
 import { globalStyle } from "@vanilla-extract/css";
-import { root_background_color } from "./_styles/vars.css";
+import { root_background_color, text1_color_var } from "./_styles/vars.css";
 
 globalStyle("*", {
   boxSizing: "border-box",
@@ -23,6 +23,7 @@ globalStyle("h1, h2, h3, p", {
 
 globalStyle("a, a:link, a:visited, a:hover", {
   textDecoration: "none",
+  color: text1_color_var,
 });
 
 globalStyle("li", {

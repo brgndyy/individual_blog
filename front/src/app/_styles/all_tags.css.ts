@@ -9,6 +9,8 @@ import { softAppear } from "./animation.css";
 export const all_tags_container = style({
   display: "flex",
   flexDirection: "column",
+  position: "sticky",
+  top: "1rem",
 });
 
 export const post_tag = style({

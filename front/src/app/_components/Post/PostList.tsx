@@ -18,6 +18,7 @@ export default function PostList({ allPosts }: PostListType) {
               createdAt={post.createdAt}
               articleImage={post.articleImage}
               body={post.body}
+              slug={post.slug}
             />
           );
         })}

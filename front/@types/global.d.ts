@@ -13,6 +13,7 @@ declare module "types/post" {
     tagList: string[];
     createdAt: string;
     articleImage: string;
+    slug: string;
   }
 
   export interface PostListType {
